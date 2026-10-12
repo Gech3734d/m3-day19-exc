@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { dishes } from "@/lib/dishes";
+export const metadata = { title: "Menu", description: "Browse the Addis Eats menu, compare dish descriptions and prices, and open a dish for more details." };
+export default function MenuPage() { return <main><p className="eyebrow">Made to satisfy</p><h1>Our menu</h1><p className="lead">Browse our current selection and choose a dish to learn more.</p><section className="grid" aria-label="All menu dishes">{dishes.map(dish=><article className="dish-card" key={dish.id}><div className="dish-art" style={{background:dish.color}} aria-hidden="true">{dish.emoji}</div><div className="dish-body"><p className="eyebrow">{dish.category}</p><h2>{dish.name}</h2><p>{dish.summary}</p><p className="price">{dish.price} Birr</p><Link className="button" href={`/menu/${dish.id}`}>Dish details</Link></div></article>)}</section></main>; }

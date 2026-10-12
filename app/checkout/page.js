@@ -1,0 +1,2 @@
+export const metadata = { title: "Checkout", description: "Review the next steps for completing an Addis Eats order in this demo checkout page." };
+export default function CheckoutPage() { return <main><p className="eyebrow">Almost there</p><h1>Checkout</h1><p className="lead">This demo checkout page shows where customer and delivery details would be collected in a complete ordering flow.</p><div className="note">Demo only: no payment or order is processed by this learning project.</div></main>; }

@@ -1,0 +1,2 @@
+export const metadata = { title: "Cart", description: "Review the items you plan to order from Addis Eats before continuing to checkout." };
+export default function CartPage() { return <main><p className="eyebrow">Your selection</p><h1>Your cart</h1><p className="lead">This learning-project cart page is a placeholder. Add cart state and selected dishes to make it interactive.</p><div className="note">Your cart is currently empty. Visit the menu to explore dishes.</div></main>; }
